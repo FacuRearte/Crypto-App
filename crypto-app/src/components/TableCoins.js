@@ -23,7 +23,7 @@ export const TableCoins = ({ coins, search }) => {
             ))
           : coins.map((coin, index) => (
               <CoinRow coin={coin} key={index} index={index} />
-            ))} 
+            ))}
       </tbody>
     </table>
   );
