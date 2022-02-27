@@ -22,6 +22,7 @@ function App() {
       <div className="row">
     <input type="text" placeholder="Search a coin" className="form-control bg-dark text-light border-0 mt-4 text-center justify-content-center"
      onChange={e => setSearch(e.target.value)}></input>
+     <button onClick={getData()} className="bg-dark text-light border-0 mt-4 text-center justify-content-center text-muted">Refresh values</button>
       <TableCoins coins={coins} search={search}/>
       </div>
     </div>
