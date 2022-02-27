@@ -5,7 +5,7 @@ const titles = ["Index", "Coin", "Price", "Price Change", "24hr volume"];
 
 export const TableCoins = ({ coins, search }) => {
   const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(search.toLowerCase())
+    coin.name.toLowerCase().includes(search.toLowerCase()) | coin.symbol.toLowerCase().includes(search.toLowerCase())
   );
   return (
     <table className="table table-dark mt-4 table-hover">
